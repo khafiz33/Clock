@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дизайн цифровых часов | С переключателем 12-часового/24-часового формата - Html, Css и Javascript</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+  <div class="format-clock-btn"></div>
+  <div class="digital-clock">
+    <i class="uil uil-ellipsis-v dot-menu-btn" id="active-menu"></i>
+    <ul class="dot-menu" id="active-menu">
+      <li class="menu-item" id="active-menu">
+        <span class="clock-format-text" id="active-menu">24-формат часов</span>
+        <div class="format-switch-btn" id="active-menu" data-format="12"></div>
+      </li>
+    </ul>
+    <div class="time">
+      <span class="hours">00</span>
+      <span class="dots">:</span>
+      <span class="minutes">00</span>
+      <div class="right-side">
+        <span class="period">АМ/ПМ</span>
+        <span class="seconds">00</span>
+      </div>
+    </div>
+    <div class="calendar">
+      <span class="month-name">Месяц</span>,
+      <span class="day-name">день</span>
+      <span class="day-number">00</span>
+      <span class="year">0000</span>
+    </div>
+  </div>
+
+  <!-- /*--------------------------------------------------------*/ -->
+  
+  <div class="analog-clock">
+    <span class="analog-text">Аналог</span>
+    <div class="hour-container">
+      <ul class="hour-numbers">
+        <li><div class="num">3</div></li>
+        <li><div class="num">6</div></li>
+        <li><div class="num">9</div></li>
+        <li><div class="num">12</div></li>
+      </ul>
+      <ul class="hour-marks">
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+        <li><div class="mark"></div></li>
+      </ul>
+      <ul class="middle-lines">
+        <li><div class="line"></div></li>
+        <li><div class="line"></div></li>
+        <li><div class="line"></div></li>
+        <li><div class="line"></div></li>
+      </ul>
+    </div>
+    <div class="hands-container">
+      <div class="hand hr-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand sec-hand"></div>
+    </div>
+    <div class="center-dot"></div>
+  </div>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>
