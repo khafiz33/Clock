@@ -97,7 +97,7 @@ function setClock() {
 
   document.querySelector(".hr-hand").style.transform = "rotate(" + hrValue + "deg)";
   document.querySelector(".min-hand").style.transform = "rotate(" + minValue + "deg)";
-  document.querySelector(".sec-hand").style.transform = "rotate(" + seconds + "deg)";
+  document.querySelector(".sec-hand").style.transform = "rotate(" + secValue + "deg)";
 };
 
 setInterval(setClock, 1000);
